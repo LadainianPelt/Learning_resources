@@ -1,0 +1,9 @@
+#Assume you are given a positive integer variable named N. Write a piece of Python code that finds the cube root of N. The code prints the cube root if N is a perfect cube or it prints error if N is not a perfect cube. Hint: use a loop that increments a counter—you decide when the counter should stop.
+d = 2
+N = 8
+while d**3 < N:
+  d += 2
+if d**3 == N:
+  print('greenlight')
+else:
+    print('error')

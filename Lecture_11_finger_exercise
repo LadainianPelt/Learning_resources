@@ -1,0 +1,18 @@
+#Implement the function that meets the specification below.:
+ 
+def remove_and_sort(Lin, k):
+ """ Lin is a list of ints
+ k is an int >= 0 
+ Mutates Lin to remove the first k elements in Lin and 
+then sorts the remaining elements in ascending order.
+ If you run out of items to remove, Lin is mutated to an empty list.
+ Does not return anything.
+ """
+    # Your code here
+def remove_and_sort(Lin, k): 
+   if len(Lin) <= k:
+    Lin.clear() 
+    return 
+   for i in range(k): 
+    del(Lin[0])
+   Lin.sort() 
